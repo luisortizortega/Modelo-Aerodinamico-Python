@@ -11,16 +11,16 @@ ALPHA,      2.0         # Ángulo de ataque (grados)
 DESVIACION, 10.0        # Umbral de aviso para puntos opcionales (%)
 BORDE,      ROMO
 
-# --- PUNTOS PREDEFINIDOS cl --- MCCROSKEY
+# --- PUNTOS PREDEFINIDOS cl --- 
 # Formato: CLAVE, Mach, valor_cl
-MCRIT,      0.65        # Mach crítico (solo Mach, sin cl)
+MCRIT,      0.7        # Mach crítico (solo Mach, sin cl)
 M_CLMAX,    0.8, 0.42  # Pico de sustentación
 M_CLMIN,    0.88, 0.1  # Valle de sustentación
 M_CLREC,    1.0, 0.19 # Recuperación transónica 2106
 
-# --- PUNTOS PREDEFINIDOS cd --- MCCROSKEY
+# --- PUNTOS PREDEFINIDOS cd --- 
 # Formato: CLAVE, Mach, valor_cd
-MDD,        0.77, 0.025   # Mach de divergencia de resistencia
+MDD,        0.77, 0.02   # Mach de divergencia de resistencia
 M_CDMAX,    0.98, 0.11   # Pico de resistencia 
 
 # --- PUNTOS OPCIONALES (descomentar para usar) ---  
@@ -28,18 +28,16 @@ M_CDMAX,    0.98, 0.11   # Pico de resistencia
 # Formato: OPCIONAL_CD, Mach, cd
 # OPCIONAL_CL, 0.50, 0.265
 # OPCIONAL_CD, 0.50, 0.0070
-OPCIONAL_CD, 1.20, 0.105
-OPCIONAL_CD, 1.4, 0.105
-OPCIONAL_CD, 0.65, 0.0125
-OPCIONAL_CL, 0.65, 0.35
-OPCIONAL_CD, 0.4, 0.0125
-OPCIONAL_CD, 0.2, 0.0125
-OPCIONAL_CD, 0.6, 0.0125
-OPCIONAL_CL, 1.5, 0.1
+OPCIONAL_CD, 1.1, 0.11
+OPCIONAL_CD, 1.0, 0.115
+OPCIONAL_CD, 0.7, 0.015
+OPCIONAL_CD, 0.4, 0.015
+OPCIONAL_CD, 0.2, 0.01
+OPCIONAL_CD, 0.6, 0.015
 OPCIONAL_CL, 1.2, 0.15
-OPCIONAL_CL, 0.2, 0.25
-OPCIONAL_CL, 0.4, 0.275
-OPCIONAL_CL, 0.7, 0.375
+OPCIONAL_CL, 0.2, 0.23
+OPCIONAL_CL, 0.4, 0.25
+OPCIONAL_CL, 0.7, 0.32
 
 ARCHIVO_REF_CL, datos_referencia_cl.csv
 ARCHIVO_REF_CD, datos_referencia_cd.csv
