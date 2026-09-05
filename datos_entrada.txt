@@ -1,0 +1,48 @@
+# ============================================================
+# datos_entrada.txt — Modelo aerodinámico
+# Ejemplo: NACA 0012, alpha = 2°
+# ============================================================
+# Formato: CLAVE, valor
+# Líneas con # son comentarios
+
+# --- GEOMETRÍA Y VUELO ---
+TC,         0.12        # Relación espesor/cuerda t/c
+ALPHA,      2.0         # Ángulo de ataque (grados)
+DESVIACION, 10.0        # Umbral de aviso para puntos opcionales (%)
+BORDE,      ROMO
+
+# --- PUNTOS PREDEFINIDOS cl --- 
+# Formato: CLAVE, Mach, valor_cl
+MCRIT,      0.65        # Mach crítico (solo Mach, sin cl)
+M_CLMAX,    0.8, 0.42  # Pico de sustentación
+M_CLMIN,    0.9, 0.1  # Valle de sustentación
+M_CLREC,    1.0, 0.189 # Recuperación transónica 2106
+
+# --- PUNTOS PREDEFINIDOS cd --- 
+# Formato: CLAVE, Mach, valor_cd
+MDD,        0.8, 0.040   # Mach de divergencia de resistencia
+M_CDMAX,    1.0, 0.117   # Pico de resistencia 
+
+# --- PUNTOS OPCIONALES (descomentar para usar) ---  
+# Formato: OPCIONAL_CL, Mach, cl
+# Formato: OPCIONAL_CD, Mach, cd
+# OPCIONAL_CL, 0.50, 0.265
+# OPCIONAL_CD, 0.50, 0.0070
+OPCIONAL_CD, 0.4, 0.011
+OPCIONAL_CD, 0.85, 0.056
+OPCIONAL_CD, 1.3, 0.106
+OPCIONAL_CD, 1.4, 0.105
+OPCIONAL_CD, 1.2, 0.107
+OPCIONAL_CD, 0.65, 0.011
+OPCIONAL_CL, 0.4, 0.268
+OPCIONAL_CL, 0.85, 0.173
+OPCIONAL_CL, 1.3, 0.134
+OPCIONAL_CL, 1.2, 0.152
+OPCIONAL_CL, 1.4, 0.122
+OPCIONAL_CL, 0.65, 0.344
+
+
+ARCHIVO_REF_CL, datos_referencia_cl.csv
+ARCHIVO_REF_CD, datos_referencia_cd.csv
+
+METODO, MAKIMA
